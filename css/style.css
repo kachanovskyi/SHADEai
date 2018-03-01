@@ -187,6 +187,32 @@ a:active {
     display: table !important;
 }
 
+.type-it {
+    color: #00A8D0;
+    white-space: pre-wrap;
+    max-width: 100%;
+    font-size: 26px;
+}
+
+.slide-2 {
+    height: 100vh;
+    background: linear-gradient(90deg, #00BCD4 16.44%, #8BC34A 84.5%);
+    display: flex;
+    float: left;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    min-height: 840px;
+}
+
+.slide-2 .background .rect {
+    height: 52%;
+}
+
+.slide-2, .slide-3 {
+    background: linear-gradient(270deg, #00BCD4 16.44%, #8BC34A 84.5%);
+}
+
 .slide-2 ol {
     margin-top: 25px;
 }
@@ -267,10 +293,40 @@ a:active {
 }
 
 .slide-3 .content {
-    margin: 72px auto 50px;
+    /*margin: 72px auto 50px;*/
+    margin: 0 auto;
     display: flex;
-    width: 80%;
+    justify-content: center;
+    /*width: 80%;*/
 }
+
+.slide-3 {
+    margin-top: -80px;
+    padding-bottom: 60px;
+}
+
+.slide-3 .background {
+    display: flex;
+    align-items: flex-end;
+    height: 599px;
+}
+
+.slide-3 .background .rect {
+    height: calc(599px - 33vh);
+    width: 100%;
+}
+
+.slide-3 .introduction-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 33%;
+    height: 100%;
+    padding: 80px 0;
+}
+
 .content .feedback {
     flex: 1;
     display: flex;
@@ -657,20 +713,23 @@ form[name="contactForm"] input::placeholder {
         padding-top: 50px;
     }
 
-    .slide-3 .iva-description {
-        padding: 40px 0;
+    .slide-3 .introduction-msg {
+        width: 50%;
     }
+    /*.slide-3 .iva-description {*/
+        /*padding: 40px 0;*/
+    /*}*/
 
-    .slide-3 .iva-description-img {
-        padding-top: 0;
-    }
+    /*.slide-3 .iva-description-img {*/
+        /*padding-top: 0;*/
+    /*}*/
 
-    .slide-3 .iva-description-img .bot-video {
-        width: 215px;
-        height: 371px;
-        margin-top: -17px;
-        margin-left: -11px;
-    }
+    /*.slide-3 .iva-description-img .bot-video {*/
+        /*width: 215px;*/
+        /*height: 371px;*/
+        /*margin-top: -17px;*/
+        /*margin-left: -11px;*/
+    /*}*/
 
     .iva-btn.subscribe {
         text-align: center;
@@ -750,6 +809,31 @@ form[name="contactForm"] input::placeholder {
     .header.header--stick .navbar {
         background: #FFFFFF;
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 4px 40px rgba(0, 0, 0, 0.05);
+    }
+
+    .type-it {
+        font-size: 24px;
+    }
+
+    .slide-2 {
+        height: 90vh;
+    }
+
+    .slide-2 .background .rect {
+        height: 75%;
+    }
+
+    .slide-2 .content > div:last-child {
+        max-width: unset;
+    }
+
+    #showHeader {
+        bottom: 0;
+        position: absolute
+    }
+
+    .slide-3 .background .rect {
+        height: calc(600px - 25vh);
     }
 
     .slide-2 .top-content p,
@@ -900,9 +984,48 @@ form[name="contactForm"] input::placeholder {
 
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
 @media (max-width: 575px) {
+
+    .type-it {
+        font-size: 15px !important;
+    }
+
+
+    .slide-2 .background .rect {
+        height: 52%;
+    }
+    
+    .slide-2 {
+        min-height: 800px !important;
+    }
     .slide-2 ol {
         margin: 0;
+    }
+
+    .slide-3 {
+        padding-bottom: 0;
+        margin-top: -160px;
+    }
+
+    .slide-3 .content {
+        margin: -160px auto 0;
+    }
+
+    .slide-3 .introduction-msg {
+        width: 62%;
+        padding: 140px 0 100px;
+    }
+
+    .slide-3 .introduction-msg img {
+        width: 30px;
+    }
+
+    .slide-3 .background .rect {
+        height: calc(600px - 10vh);
     }
 
     form[name="contactForm"] input {
@@ -910,12 +1033,39 @@ form[name="contactForm"] input::placeholder {
     }
 }
 
-@media (max-width: 404px) {
+@media (max-width: 444px) {
+    .type-it {
+        font-size: 18px !important;
+        color: #FFFFFF;
+    }
+
+    #laptopImg {
+        display: none;
+    }
+
     .slide-1 > .content {
         padding: 0 25px !important;
     }
+
+    .slide-2 {
+        min-height: 900px !important;
+    }
+
     .slide-2 > .content {
         padding: 0 15px !important;
+    }
+
+    .slide-3 {
+        margin-top: -120px;
+    }
+
+    .slide-3 .content {
+        margin-top: -220px;
+    }
+
+    .slide-3 .introduction-msg {
+        padding: 0;
+        width: 80%;
     }
 
     form[name="contactForm"] input {

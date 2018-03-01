@@ -1,0 +1,12 @@
+<svg width="15" height="28" viewBox="0 0 15 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Line 2 Copy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2242 -2866)">
+<g id="Line 2 Copy">
+<use xlink:href="#path0_stroke" transform="matrix(-1 0 0 1 2256 2867)" fill="#C4C4C4"/>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 13.3562 0.350937L 13.7071 -0.00521451L 12.9948 -0.707088L 12.6438 -0.350937L 13.3562 0.350937ZM 0 13.1932L -0.356151 12.8422L -0.707126 13.1984L -0.350897 13.5494L 0 13.1932ZM 12.6491 26.3562L 13.0053 26.7071L 13.7071 25.9947L 13.3509 25.6438L 12.6491 26.3562ZM 12.6438 -0.350937L -0.356151 12.8422L 0.356151 13.5441L 13.3562 0.350937L 12.6438 -0.350937ZM -0.350897 13.5494L 12.6491 26.3562L 13.3509 25.6438L 0.350897 12.837L -0.350897 13.5494Z"/>
+</defs>
+</svg>

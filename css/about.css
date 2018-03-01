@@ -1,0 +1,35 @@
+.about-section .slide-2 p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+    .about-section .slide-5 .container-inner {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    .slide-1 > .content {
+        display: table-cell;
+        height: 100vh;
+        padding-top: 80px;
+    }
+    .about-section .slide-1.paraxify {
+        background: url("../img/about-bg-min.png") center;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav.navbar-nav.navbar-right>li>a.menu-item{padding:20px 0 20px 20px;margin:0!important;border:none!important;}
+}
+
+@media (max-width: 575px) {
+    .slide-1 > .content {
+        display: table-cell;
+        height: 100vh;
+        padding-top: 80px;
+    }
+}
+
+@media (max-width:444px){.navbar .content{padding:0 10px;}}

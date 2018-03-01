@@ -1,0 +1,40 @@
+<svg width="865" height="466" viewBox="0 0 865 466" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2982 -7563)">
+<g id="Group 2">
+<g id="Group">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(2982 7994.82)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path1_fill" transform="translate(2982 8011.49)" fill="#D3D4D2"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(3347.96 7994.82)" fill="#B7B7B9"/>
+</g>
+<g id="Rectangle 2">
+<use xlink:href="#path3_fill" transform="translate(3085.13 7563)" fill="#4A4A4A"/>
+</g>
+<g id="Rectangle 2.1" opacity="0.1">
+<use xlink:href="#path4_fill" transform="translate(3344.7 7563)" fill="#F2F2F2"/>
+</g>
+<g id="Rectangle 3">
+<use xlink:href="#path5_fill" transform="translate(3120.07 7594.68)" fill="#FFFFFF"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path6_fill" transform="translate(3410.32 7574.93)" fill="#E0E0E0"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 865 0L 865 16.6726L 0 16.6726L 0 0Z"/>
+<path id="path1_fill" d="M 0 0L 865 0L 842.684 11.1833C 834.388 15.3412 825.235 17.5062 815.954 17.5062L 43.2118 17.5062C 30.2805 17.5062 17.6994 13.3048 7.36287 5.53477L 0 0Z"/>
+<path id="path2_fill" d="M 0 0L 133.077 0L 133.077 7.37197C 133.077 10.667 130.406 13.3381 127.111 13.3381L 5.96611 13.3381C 2.67112 13.3381 0 10.667 0 7.37197L 0 0Z"/>
+<path id="path3_fill" d="M 0 23.8645C 0 10.6845 10.6845 0 23.8645 0L 633.203 0C 646.383 0 657.067 10.6845 657.067 23.8645L 657.067 431.82L 0 431.82L 0 23.8645Z"/>
+<path id="path4_fill" d="M 0 0L 373.634 0C 386.814 0 397.499 10.6845 397.499 23.8645L 397.499 431.821L 134.224 431.821L 0 0Z"/>
+<path id="path5_fill" d="M 0 0L 587.202 0L 587.202 375.134L 0 375.134L 0 0Z"/>
+<path id="path6_fill" d="M 9.52499 4.77337C 9.52499 7.40963 7.39274 9.54674 4.76249 9.54674C 2.13224 9.54674 0 7.40963 0 4.77337C 0 2.13711 2.13224 0 4.76249 0C 7.39274 0 9.52499 2.13711 9.52499 4.77337Z"/>
+</defs>
+</svg>

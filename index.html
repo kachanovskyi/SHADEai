@@ -364,15 +364,15 @@
         }
 
         .bot-video {
-            width: 222px;
-            height: 395px;
+            width: 242px;
+            height: 420px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 3;
-            margin-top: -18px;
-            margin-left: -13px;
+            margin-top: -3px;
+            margin-left: 0;
         }
 
         .slide-1 {
@@ -703,6 +703,14 @@
                 font-size: 18px;
             }
 
+            .bot-video {
+                width: 210px;
+                height: 368px;
+            }
+            .iva-description-img {
+                height: 500px;
+            }
+
             .bottom-triangle:before, .bottom-triangle.inverted:before {
                 border-top-width: 10vh;
             }
@@ -820,7 +828,8 @@
         <div class="top-content"><h2>Features</h2>
             <p> Sabo is Siri for your health and life insurance needs.</p></div>
         <div class="content col-xs-12">
-            <div id="featuresCarousel" class="carousel slide hidden-xs" data-ride="carousel" data-interval="false">
+            <div id="featuresCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="iva-description-img video">
@@ -850,9 +859,15 @@
                         </div>
                     </div>
                 </div>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#featuresCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#featuresCarousel" data-slide-to="1"></li>
+                    <li data-target="#featuresCarousel" data-slide-to="2"></li>
+                </ol>
             </div>
 
-            <div>
+            <div class="hidden-xs">
                 <ol class="features-carousel-indicators">
                     <li data-slide-to="0" class="active">
                         <h3>Smart Insights</h3>
@@ -971,8 +986,8 @@
         </div>
     </div>
     <div class="rights-reserved col-xs-12">
-        <p>Copyright Shade.ai Inc. 2018. All rights reserved.</p>
-        <p> © 2018 Shade.ai Shade.ai Inc. is registered and incorporated in BC, Canada and Delaware, U.S.A</p>
+        <p>Copyright Shade.ai Inc. 2018. All rights reserved. © 2018 Shade.ai.</p>
+        <p>Shade.ai Inc. is registered and incorporated in BC, Canada, and Delaware, U.S.A.</p>
     </div>
 </section>
 <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">

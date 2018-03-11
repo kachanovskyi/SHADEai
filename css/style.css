@@ -586,6 +586,7 @@ form[name="contactForm"] input::placeholder {
     height: 572px;
     width: 300px;
     max-width: 100%;
+    margin: 0 auto;
 }
 .slide-3 .iva-description-img.animate-in {
     padding-top: 100px;
@@ -989,16 +990,20 @@ form[name="contactForm"] input::placeholder {
         margin-right: 4px;
     }
 
-    #featuresCarousel .iva-description-img {
-        background-image: none;
-        height: 400px;
+    #featuresCarousel .top-content p {
+        margin-top: 0;
     }
 
-    #featuresCarousel .iva-description-img > video {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        width: 225px !important;
-        height: 390px !important;
-    }
+    /*#featuresCarousel .iva-description-img {*/
+        /*background-image: none;*/
+        /*height: 400px;*/
+    /*}*/
+
+    /*#featuresCarousel .iva-description-img > video {*/
+        /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+        /*width: 225px !important;*/
+        /*height: 390px !important;*/
+    /*}*/
 
     .slide-6 .container-inner {
         display: block;
@@ -1044,7 +1049,8 @@ form[name="contactForm"] input::placeholder {
 
     .slide-3 {
         padding-bottom: 0;
-        margin-top: -160px;
+        margin-top: 0;
+        /*margin-top: -160px;*/
     }
 
     .slide-3 .content {

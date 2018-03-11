@@ -665,11 +665,13 @@
 
             .slide-3 {
                 padding-bottom: 0;
-                margin-top: -160px;
+                margin-top: 0;
+                /*margin-top: -160px;*/
             }
 
             .slide-3 .content {
                 margin: -80px auto 0;
+                display: none;
             }
 
             .slide-3 .introduction-msg {
@@ -752,6 +754,7 @@
 
             .slide-3 .content {
                 width: 100%;
+                display: none;
             }
 
             #feedbackCarousel .feedback {
@@ -826,12 +829,16 @@
             <div class="bottom-triangle inverted"></div>
         </div>
         <div class="top-content"><h2>Features</h2>
-            <p> Sabo is Siri for your health and life insurance needs.</p></div>
+            <p class="hidden-xs">Sabo is Siri for your health and life insurance needs.</p></div>
         <div class="content col-xs-12">
             <div id="featuresCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
                 <div class="carousel-inner">
-                    <div class="item active">
+                    <div class="item active text-center">
+                        <div class="top-content hidden-sm">
+                            <h3>Smart Insights</h3>
+                            <p> Sabo’s AI brain tells you what you need to know instantly.</p>
+                        </div>
                         <div class="iva-description-img video">
                             <video class="bot-video" autoplay loop muted poster="img/Assistant.png">
                                 <source src="video/Feature1.mp4" type="video/mp4">
@@ -840,7 +847,11 @@
                             </video>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item text-center">
+                        <div class="top-content hidden-sm">
+                            <h3>Elegantly Simple</h3>
+                            <p> Shade looks beautiful and works beautifully.</p>
+                        </div>
                         <div class="iva-description-img video">
                             <video class="bot-video" autoplay loop muted poster="img/Assistant.png">
                                 <source src="video/Feature2.mp4" type="video/mp4">
@@ -849,7 +860,11 @@
                             </video>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item text-center">
+                        <div class="top-content hidden-sm">
+                            <h3>Save Money</h3>
+                            <p> Shade’s got your back by saving you time and money.</p>
+                        </div>
                         <div class="iva-description-img video">
                             <video class="bot-video" autoplay loop muted poster="img/Assistant.png">
                                 <source src="video/Feature3.mp4" type="video/mp4">
@@ -1027,8 +1042,23 @@ if (raf) raf(cb); else window.addEventListener('load', cb);</script>
     };
     var header = new Headhesive('.header', options);
 </script>
+<script>
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        addJS_Node(null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, function () {
+            var featuresCarousel = $('#featuresCarousel');
+            featuresCarousel.on("swipeleft", function () {
+                $(this).carousel("next");
+                return false;
+            });
+            featuresCarousel.on("swiperight", function () {
+                $(this).carousel("prev");
+                return false;
+            });
+        });
+    }
+</script>
 <script src="js/typed.js"></script>
-<script defer>
+<script>
     $(".type-it").typed({
         typeSpeed: 40,
         backSpeed: 40,

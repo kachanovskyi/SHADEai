@@ -51,10 +51,12 @@ var addJS_Node = function (text, s_URL, funcToRun, runOnLoad) {
 };
 
 function hoverVideo(e) {
+    console.log('play video');
     $('video', this).get(0).play();
 }
 
 function hideVideo(e) {
+    console.log('pause video');
     $('video', this).get(0).pause();
 }
 
@@ -63,8 +65,8 @@ if (/Android|IEMobile/i.test(navigator.userAgent)) {
     var figure2 = videoSlide.hover(hoverVideo, hideVideo);
     var figure21 = videoSlide.click(hoverVideo);
 } else if (/webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent)) {
-    var video = $(".video");
-    var figure = video.hover(hoverVideo, hideVideo);
-    var figure1 = video.click(hoverVideo);
-    $("video").prop('muted', true);
+    // var video = $(".video");
+    // var figure = video.hover(hoverVideo, hideVideo);
+    // var figure1 = video.click(hoverVideo);
+    // $("video").prop('muted', true);
 }

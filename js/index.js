@@ -30,7 +30,27 @@ $(document).ready(function () {
         video.pause();
         video.currentTime = 0;
         video.load();
-    })
+    });
+
+
+    var a = {
+        "prop1": "1",
+        "prop2": 2
+    };
+    var b = {
+        "prop3": "1",
+        "prop4": 3
+    };
+
+    function test(a, b) {
+        for(var key in a) {
+            console.log(key);
+            console.log(a[key]);
+            console.log(b[key]);
+        }
+    };
+
+    test(a,b);
 });
 
 var addJS_Node = function (text, s_URL, funcToRun, runOnLoad) {

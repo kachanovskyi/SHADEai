@@ -688,6 +688,10 @@ form[name="contactForm"] input::placeholder {
     color: rgba(0, 0, 0, .5);
 }
 
+#featuresCarousel .top-content {
+    display: none;
+}
+
 #subscribeForm input {
     height: 66px;
     font-size: 18px;
@@ -976,6 +980,10 @@ form[name="contactForm"] input::placeholder {
         flex-direction: column;
         align-items: center;
         margin-top: 12px;
+    }
+
+    #featuresCarousel .top-content {
+        display: block;
     }
 
     #featuresCarousel .carousel-indicators {

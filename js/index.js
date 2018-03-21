@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    $('<iframe name="mock_frame" style="display: none; visibility: hidden;"></iframe>').appendTo('body');
+
+    $('#successModal').on('shown.bs.modal', function (e) {
+        $(".sa-success").addClass("hide");
+        setTimeout(function() {
+            $(".sa-success").removeClass("hide");
+        }, 10);
+    });
+
+    $('#contactForm').submit(function () {
+        $('#successModal').modal('show');
+    });
+
+
     $(".navbar-brand").animate({"opacity": 1}, 600, function () {
         $("#navbar, .slide-1>.content").animate({"opacity": 1}, 600);
     });
@@ -31,26 +45,6 @@ $(document).ready(function () {
         video.currentTime = 0;
         video.load();
     });
-
-
-    var a = {
-        "prop1": "1",
-        "prop2": 2
-    };
-    var b = {
-        "prop3": "1",
-        "prop4": 3
-    };
-
-    function test(a, b) {
-        for(var key in a) {
-            console.log(key);
-            console.log(a[key]);
-            console.log(b[key]);
-        }
-    };
-
-    test(a,b);
 });
 
 var addJS_Node = function (text, s_URL, funcToRun, runOnLoad) {

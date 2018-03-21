@@ -995,7 +995,7 @@
     </div>
     <div class="slide-6 col-xs-12">
         <div class="top-content"><h2 class="white">Ready to get started?</h2></div>
-        <form method="POST" name="contactForm" autocomplete="off" target="_blank" id="contactForm">
+        <form method="POST" name="contactForm" autocomplete="off" target="mock_frame" id="contactForm">
             <input type="text" name="Name" placeholder="Full name" required>
             <input type="email" name="Email" placeholder="E-mail" required>
             <input type="text" name="Phone" placeholder="Phone">
@@ -1014,6 +1014,23 @@
     <div class="rights-reserved col-xs-12">
         <p>Copyright Shade.ai Inc. 2018. All rights reserved. © 2018 Shade.ai.</p>
         <p>Shade.ai Inc. is registered and incorporated in BC, Canada, and Delaware, U.S.A.</p>
+    </div>
+
+    <div class="modal fade" id="successModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="check_mark">
+                        <div class="sa-icon sa-success animate">
+                            <span class="sa-line sa-tip animateSuccessTip"></span>
+                            <span class="sa-line sa-long animateSuccessLong"></span>
+                            <div class="sa-placeholder"></div>
+                            <div class="sa-fix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">

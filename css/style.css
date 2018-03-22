@@ -748,6 +748,10 @@ form[name="contactForm"] input::placeholder {
 .modal-dialog {
     position: relative;
     top: 50%;
+    -ms-transform: translateY(-50%) !important;
+    -webkit-transform: translateY(-50%) !important;
+    -moz-transform: translateY(-50%) !important;
+    -o-transform: translateY(-50%) !important;
     transform: translateY(-50%) !important;
 }
 /*Success animation styles*/

@@ -1000,9 +1000,10 @@
     <div class="slide-6 col-xs-12">
         <div class="top-content"><h2 class="white">Ready to get started?</h2></div>
         <form method="POST" name="contactForm" autocomplete="off" target="mock_frame" id="contactForm">
-            <input type="text" name="Name" placeholder="Full name" required>
-            <input type="email" name="Email" placeholder="E-mail" required>
-            <input type="text" name="Phone" placeholder="Phone">
+            <input type="text" name="Name" placeholder="Full name" required/>
+            <input type="email" name="Email" placeholder="E-mail" required/>
+            <!--<input type="text" name="Phone" placeholder="Phone">-->
+            <input type="tel" name="Phone number" pattern='^\+?\d{0,13}' placeholder="Phone number"/>
             <button type="submit" class="shade-btn wide">Sign up</button>
         </form>
 

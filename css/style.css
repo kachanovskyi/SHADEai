@@ -227,7 +227,7 @@ a:active {
     width: 100%;
     flex-direction: column;
     position: relative;
-    min-height: 840px;
+    min-height: 830px !important;
 }
 
 .slide-2 .background .rect {
@@ -1290,6 +1290,10 @@ form[name="contactForm"] input::placeholder {
     .slide-5 .info-right {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .slide-2 {
+        min-height: auto;
     }
 
     #featuresCarousel {

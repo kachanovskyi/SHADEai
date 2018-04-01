@@ -9,7 +9,8 @@ $(document).ready(function () {
     });
 
     $('#contactForm').submit(function () {
-        $('#successModal').modal('show');
+        // $('#successModal').modal('show');
+        window.location.href = "mailto:team@shadeai.ai";
     });
 
 

@@ -63,6 +63,7 @@ a:active {
     -ms-transition: opacity 2s ease-in-out;
     -o-transition: opacity 2s ease-in-out;
 }
+
 .button-play > img {
     width: 100%;
     height: 100%;
@@ -80,8 +81,38 @@ a:active {
     text-decoration: underline;
 }
 
+.img_block {
+    display: block;
+    margin: 0 auto;
+}
+
 .navbar-toggle {
     margin: 30px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    padding: 4px 1px 0 1px;
+    background: #e5e5e5;
+    margin: 8px 14px;
+    -webkit-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 .header {
@@ -159,6 +190,7 @@ a:active {
 .nav.navbar-nav.navbar-right > li > a.menu-item > img {
     height: 20px;
 }
+
 .nav.navbar-nav.navbar-right > li > a.menu-item > p {
     color: #FFFFFF;
     vertical-align: middle;
@@ -241,6 +273,7 @@ a:active {
 .slide-2 ol {
     margin-top: 25px;
 }
+
 .slide-2 ol li,
 .slide-2 ol li h3 {
     font-size: 32px;
@@ -261,6 +294,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+
 .slide-2 li p > a {
     color: #C4C4C4;
     display: inline-block;
@@ -283,9 +317,10 @@ a:active {
 .slide-2 ol li:hover p {
     color: #333333;
 }
+
 .slide-2 ol li:hover,
 .slide-2 ol li:hover h3,
-.slide-2 ol li:hover p > a  {
+.slide-2 ol li:hover p > a {
     color: #8BC34A;
     cursor: pointer;
 }
@@ -303,8 +338,8 @@ a:active {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: scale(0,1);
-    transform: scale(0,1);
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
 }
 
 .slide-2 ol li:hover p > a:after {
@@ -390,6 +425,7 @@ a:active {
     font-weight: bold;
     margin: 0;
 }
+
 .feedback h4 span {
     font-size: 15px;
     font-weight: 300;
@@ -416,19 +452,21 @@ a:active {
 #feedbackCarousel {
     margin-top: 75px;
 }
+
 #feedbackCarousel .carousel-control {
     background: none;
     display: flex;
     align-items: center;
     width: unset;
 }
+
 #feedbackCarousel .carousel-control:first-of-type {
     justify-content: flex-start;
 }
+
 #feedbackCarousel .carousel-control:last-of-type {
     justify-content: flex-end;
 }
-
 
 #feedbackCarousel .feedback {
     box-shadow: none;
@@ -436,16 +474,19 @@ a:active {
     margin: 0 auto;
     padding: 0;
 }
+
 #feedbackCarousel .feedback p {
     margin-bottom: 12px;
     line-height: 23px;
     font-size: 15px;
 }
+
 #feedbackCarousel .feedback h5 {
     font-size: 16px;
     margin: 0;
     letter-spacing: 1.5px;
 }
+
 #feedbackCarousel .feedback img {
     height: 120px;
     width: auto;
@@ -473,7 +514,6 @@ a:active {
 .slide-6 .top-content {
     margin-bottom: 25px;
 }
-
 
 .slide-1,
 .slide-2,
@@ -517,7 +557,6 @@ form[name="contactForm"] input::placeholder {
     color: #FFFFFF;
 }
 
-
 .slide-1 > .content,
 .slide-4 .content-inner {
     margin-top: auto;
@@ -553,6 +592,7 @@ form[name="contactForm"] input::placeholder {
 .slide-2 .case:hover {
     text-decoration: none;
 }
+
 .slide-2 .case img {
     height: 150px;
     max-width: 100%;
@@ -594,6 +634,7 @@ form[name="contactForm"] input::placeholder {
     justify-content: center;
     background: #F6F6F6;
 }
+
 .rights-reserved p {
     font-size: 13px;
     text-align: center;
@@ -612,6 +653,7 @@ form[name="contactForm"] input::placeholder {
     max-width: 100%;
     margin: 0 auto;
 }
+
 .slide-3 .iva-description-img.animate-in {
     padding-top: 100px;
 }
@@ -619,6 +661,7 @@ form[name="contactForm"] input::placeholder {
 .slide-3 .iva-description-img img {
     height: 100%;
 }
+
 .slide-3 .iva-description-img .video {
     z-index: 9;
 }
@@ -643,10 +686,12 @@ form[name="contactForm"] input::placeholder {
     outline: none;
     /*cursor: pointer;*/
 }
+
 .social-link img {
     width: 25px;
     height: 25px;
 }
+
 .social-link:not(:last-of-type) {
     margin-right: 25px;
 }
@@ -738,7 +783,6 @@ form[name="contactForm"] input::placeholder {
     display: inline-block;
 }
 
-
 .modal-content {
     margin: 0 auto;
     width: 444px;
@@ -754,6 +798,7 @@ form[name="contactForm"] input::placeholder {
     -o-transform: translateY(-50%) !important;
     transform: translateY(-50%) !important;
 }
+
 /*Success animation styles*/
 .check_mark {
     width: 80px;
@@ -761,8 +806,8 @@ form[name="contactForm"] input::placeholder {
     margin: 0 auto;
 }
 
-.hide{
-    display:none;
+.hide {
+    display: none;
 }
 
 .sa-icon {
@@ -849,11 +894,13 @@ form[name="contactForm"] input::placeholder {
 }
 
 .sa-icon.sa-success {
-    border-color: transparent\9;
+    border-color: transparent \9;
 }
+
 .sa-icon.sa-success .sa-line.sa-tip {
     -ms-transform: rotate(45deg) \9;
 }
+
 .sa-icon.sa-success .sa-line.sa-long {
     -ms-transform: rotate(-45deg) \9;
 }
@@ -890,6 +937,7 @@ form[name="contactForm"] input::placeholder {
         top: 38px;
     }
 }
+
 @-webkit-keyframes animateSuccessTip {
     0% {
         width: 0;
@@ -917,6 +965,7 @@ form[name="contactForm"] input::placeholder {
         top: 45px;
     }
 }
+
 @keyframes animateSuccessTip {
     0% {
         width: 0;
@@ -1011,6 +1060,7 @@ form[name="contactForm"] input::placeholder {
         -webkit-transform: rotate(-405deg);
     }
 }
+
 @keyframes rotatePlaceholder {
     0% {
         transform: rotate(-45deg);
@@ -1029,8 +1079,8 @@ form[name="contactForm"] input::placeholder {
         -webkit-transform: rotate(-405deg);
     }
 }
-/*Success animation styles --END*/
 
+/*Success animation styles --END*/
 
 @media (max-width: 1199px) {
     h1 {
@@ -1044,21 +1094,19 @@ form[name="contactForm"] input::placeholder {
     .slide-3 .introduction-msg {
         width: 50%;
     }
+
     /*.slide-3 .iva-description {*/
-        /*padding: 40px 0;*/
+    /*padding: 40px 0;*/
     /*}*/
-
     /*.slide-3 .iva-description-img {*/
-        /*padding-top: 0;*/
+    /*padding-top: 0;*/
     /*}*/
-
     /*.slide-3 .iva-description-img .bot-video {*/
-        /*width: 215px;*/
-        /*height: 371px;*/
-        /*margin-top: -17px;*/
-        /*margin-left: -11px;*/
+    /*width: 215px;*/
+    /*height: 371px;*/
+    /*margin-top: -17px;*/
+    /*margin-left: -11px;*/
     /*}*/
-
     .iva-btn.subscribe {
         text-align: center;
         padding: 22px 12px;
@@ -1083,23 +1131,20 @@ form[name="contactForm"] input::placeholder {
     }
 }
 
-
 @media (min-width: 992px) {
     /*#showHeader {*/
-        /*position: absolute;*/
-        /*bottom: 140px;*/
+    /*position: absolute;*/
+    /*bottom: 140px;*/
     /*}*/
-
     .slide-1 > .content {
         padding: 0;
     }
 
     /*.slide-3 .iva-description,*/
     /*.iva-description-img {*/
-        /*display: table-cell;*/
-        /*float: none;*/
+    /*display: table-cell;*/
+    /*float: none;*/
     /*}*/
-
     .slide-5 .content {
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.199502);
         border-radius: 10px;
@@ -1115,6 +1160,7 @@ form[name="contactForm"] input::placeholder {
         margin: 0;
 
     }
+
     .slide-5 .content > div:first-child {
         border-bottom: 1px solid #D8D8D8;
     }
@@ -1130,8 +1176,6 @@ form[name="contactForm"] input::placeholder {
         padding: 30px 25px;
     }
 }
-
-
 
 @media (max-width: 991px) {
     .header.header--stick .navbar {
@@ -1180,6 +1224,7 @@ form[name="contactForm"] input::placeholder {
     .slide-5 .background .rect {
         height: 80%;
     }
+
     .slide-5 .bottom-triangle.inverted.left-to-right:before {
         border-top-width: 10vh;
     }
@@ -1237,6 +1282,7 @@ form[name="contactForm"] input::placeholder {
     #feedbackCarousel {
         margin-top: 50px;
     }
+
     #feedbackCarousel .feedback {
         width: 88%;
     }
@@ -1324,16 +1370,14 @@ form[name="contactForm"] input::placeholder {
     }
 
     /*#featuresCarousel .iva-description-img {*/
-        /*background-image: none;*/
-        /*height: 400px;*/
+    /*background-image: none;*/
+    /*height: 400px;*/
     /*}*/
-
     /*#featuresCarousel .iva-description-img > video {*/
-        /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
-        /*width: 225px !important;*/
-        /*height: 390px !important;*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    /*width: 225px !important;*/
+    /*height: 390px !important;*/
     /*}*/
-
     .slide-6 .container-inner {
         display: block;
     }
@@ -1352,7 +1396,7 @@ form[name="contactForm"] input::placeholder {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    
+
 }
 
 @media (max-width: 575px) {
@@ -1368,10 +1412,11 @@ form[name="contactForm"] input::placeholder {
     .slide-2 .background .rect {
         height: 52%;
     }
-    
+
     .slide-2 {
         min-height: 800px !important;
     }
+
     .slide-2 ol {
         margin: 20px 0 0 0;
     }

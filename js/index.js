@@ -9,10 +9,37 @@ $(document).ready(function () {
     });
 
     $('#contactForm').submit(function () {
-        $('#successModal').modal('show');
-        $("#nameInput").val("");
-        $("#emailInput").val("");
-        $("#telInput").val("");
+
+        var data = {
+            name: $("#nameInput").val(),
+            email: $("#emailInput").val(),
+            phone: $("#telInput").val()
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "https://17f136d7.ngrok.io/lead-data",
+            // url: "https://udigital.botscrew.com/lead-data",
+            contentType: "application/json; charset=utf-8",
+            credentials: 'same-origin',
+            dataType: "json",
+            data: JSON.stringify(data),
+
+            complete: function (res) {
+                if (res.status === 200) {
+                    $('#successModal').modal('show');
+                    $("#nameInput").val("");
+                    $("#emailInput").val("");
+                    $("#telInput").val("");
+                } else {
+                    console.log("Server Error #" + res.status + ": " + res.responseText);
+                }
+            }
+            // ,
+            // error: function (err) {
+            //     console.log("Server Error: ", err);
+            // }
+        });
     });
 
 

@@ -18,8 +18,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://17f136d7.ngrok.io/lead-data",
-            // url: "https://udigital.botscrew.com/lead-data",
+            url: "https://udigital.botscrew.com/lead-data",
             contentType: "application/json; charset=utf-8",
             credentials: 'same-origin',
             dataType: "json",

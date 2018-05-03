@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://udigital.botscrew.com/lead-data",
+            url: "https://mail.shadeai.ai",
             contentType: "application/json; charset=utf-8",
             credentials: 'same-origin',
             dataType: "json",

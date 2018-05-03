@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://mail.shadeai.ai",
+            url: "https://mail.shadeai.ai/lead-data",
             contentType: "application/json; charset=utf-8",
             credentials: 'same-origin',
             dataType: "json",

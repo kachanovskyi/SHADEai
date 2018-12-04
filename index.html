@@ -1007,7 +1007,7 @@
         </form>
 
         <div class="text-center social-link-container">
-            <a class="social-link" href="https://www.facebook.com/MeetShadeAI/" target="_blank"><img src="img/fb.svg"
+            <a class="social-link" href="https://www.facebook.com/Sabo-Your-Virtual-Insurance-Assistant-1021887024646845/" target="_blank"><img src="img/fb.svg"
                                                                                                      alt="fb icon"/></a>
             <a class="social-link" href="https://twitter.com/MeetShadeAI" target="_blank"><img src="img/tw.svg"
                                                                                                alt="twitter icon"/></a>
@@ -1037,6 +1037,24 @@
         </div>
     </div>
 </section>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="1021887024646845"
+     theme_color="#13cf13"
+     logged_in_greeting="Hello! Get your instant insurance advice here."
+     logged_out_greeting="Hello! Get your instant insurance advice here.">
+</div>
 <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 <script src="js/jquery-1.11.3.min.js"></script>
@@ -1113,7 +1131,7 @@ if (raf) raf(cb); else window.addEventListener('load', cb);</script>
         fadeOut: true
     });
 </script>
-
+<script src="https://demo.botscrew.com/file/js/widget-botscrew-demo.js"></script>
 <!-- Start of HubSpot Embed Code -->
 <!--<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4313996.js"></script>-->
 <!-- End of HubSpot Embed Code -->
